@@ -36,7 +36,7 @@ USER_BOT_WARN_ZERO = "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blo
 alive_txt = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
+<b>𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
@@ -98,7 +98,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://telegra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://telegra.ph/file/3db99bae1179a1efa9280.jpg"
             help_msg = f"🔰 **{hell_mention}**\n\n📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\n🗒️ __Page__ : 1/{veriler[0]}"
             if help_pic == "DISABLE":
                 result = builder.article(
@@ -124,7 +124,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alv_msg = gvarstat("ALIVE_MSG") or "»»» <b>нєℓℓвσт ιѕ σиℓιиє</b> «««"
+            alv_msg = gvarstat("ALIVE_MSG") or "»»» <b>𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 ιѕ σиℓιиє</b> «««"
             he_ll = alive_txt.format(alv_msg, tel_ver, hell_ver, uptime, abuse_m, is_sudo)
             alv_btn = [
                 [Button.url(f"{HELL_USER}", f"tg://openmessage?user_id={ForGo10God}")],
@@ -140,7 +140,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+                PIC = "https://telegra.ph/file/8ab3f0bc9f3f88463ced"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -169,7 +169,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-            HELL_FIRST = "**🔥 Hêllẞø† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
+            HELL_FIRST = "**🔥 𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
             a = gvarstat("PMPERMIT_PIC")
             pic_list = []
             if a:
@@ -179,7 +179,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://te.legra.ph/file/323e6f8c50ab9110354dd.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -218,7 +218,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ 𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 ⚡**",
                 buttons=[
                     [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
                     [Button.url("HellBot Netwprk", "https://t.me/hellbot_network")],
@@ -259,7 +259,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         if event.query.user_id in auth:
             reply_pop_up_alert = "This is for Other Users..."
         else:
-            reply_pop_up_alert = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_pop_up_alert = "🔰 This is 𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -324,7 +324,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         auth = await clients_list()
         if event.query.user_id in auth:
             veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
-            await event.edit(f"**⚜️ Hêllẞø† Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})", buttons=veriler, link_preview=False)
+            await event.edit(f"**⚜️ 𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ 𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 ™️]({chnl_link})", buttons=veriler, link_preview=False)
         else:
             reply_pop_up_alert = "You are not authorized to use me! \n© Hêllẞø† ™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
@@ -419,7 +419,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me! \n© 𝔗𝔶𝔰𝔬𝔫𝔅𝔬𝔱 ™", cache_time=0, alert=True)
 
 
 # hellbot
